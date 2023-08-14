@@ -3,6 +3,9 @@ import { MegaMenu } from "primereact/megamenu";
 import { InputText } from "primereact/inputtext";
 
 export default function Header() {
+  const start = <FontAwesomeIcon icon="fa-solid fa-music" />;
+  const end = <InputText placeholder="Search" type="text" />;
+
   return (
     <div className="card">
       <MegaMenu
