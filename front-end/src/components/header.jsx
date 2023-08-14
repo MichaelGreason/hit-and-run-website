@@ -11,6 +11,18 @@ export default function Header() {
     navigate("/");
   }
 
+  function goListen() {
+    navigate("/listen");
+  }
+
+  function goPhotos() {
+    navigate("/photos");
+  }
+
+  function goReviews() {
+    navigate("/reviews");
+  }
+
   return (
     <>
       <div className="mt-4 mx-4 mb-10 flex  justify-between">
@@ -21,9 +33,18 @@ export default function Header() {
           <Dropdown>
             <MenuButton>Explore</MenuButton>
             <Menu>
-              <MenuItem className="mr-4 my-2">Listen</MenuItem>
-              <MenuItem className="mr-4 my-2">Photos</MenuItem>
-              <MenuItem className="mr-4 my-2">Reviews</MenuItem>
+              <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
+                Listen
+              </MenuItem>
+              <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goPhotos}>
+                Photos
+              </MenuItem>
+              <MenuItem
+                className="mr-4 my-2 cursor-pointer"
+                onClick={goReviews}
+              >
+                Reviews
+              </MenuItem>
             </Menu>
           </Dropdown>
         </div>
