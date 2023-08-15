@@ -3,6 +3,10 @@ import { MenuButton } from "@mui/base/MenuButton";
 import { MenuItem } from "@mui/base/MenuItem";
 import { Dropdown } from "@mui/base/Dropdown";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-regular-svg-icons";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -25,25 +29,25 @@ export default function Header() {
 
   return (
     <>
-      <div className="mt-4 mx-4 mb-10 flex  justify-between">
+      <div className="mb-4 p-4 flex justify-between bg-cyan-400">
         <div className=" cursor-pointer" onClick={goHome}>
           Hit and Run Studios
         </div>
         <div className="">
           <Dropdown>
             <MenuButton>Explore</MenuButton>
-            <Menu>
+            <Menu className=" border-2 border-gray-900 p-2 bg-cyan-400">
               <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
-                Listen
+                <FontAwesomeIcon icon={faHeadphones} className=" mr-1" /> Listen
               </MenuItem>
               <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goPhotos}>
-                Photos
+                <FontAwesomeIcon icon={faImage} className="mr-1" /> Photos
               </MenuItem>
               <MenuItem
                 className="mr-4 my-2 cursor-pointer"
                 onClick={goReviews}
               >
-                Reviews
+                <FontAwesomeIcon icon={faPencil} className="mr-1" /> Reviews
               </MenuItem>
             </Menu>
           </Dropdown>
