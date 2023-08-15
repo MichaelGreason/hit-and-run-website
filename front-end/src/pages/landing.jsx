@@ -7,13 +7,16 @@ export default function Landing() {
         <div className="text-center text-6xl font-extrabold">
           Welcome to the studio
         </div>
-        <div className="cards">
+        <div className="cards font-extrabold">
           Hi, my name is Michael Greason. I am the owner and operator of Hit and
           Run Studios here in Orange County, NC. I focus on delivering an
           amazing product at a low cost. I attended college at Full Sail
           University in Winter Park, FL where I obtained my Audio Engineering
           degree. I have live music experience touring the US in my band
-          <a href="https://open.spotify.com/artist/48STVXwvno3eEgQTw9GSjG?si=pG1VFW6MS0W5flrQvWdn3A">
+          <a
+            className=" text-blue-700"
+            href="https://open.spotify.com/artist/48STVXwvno3eEgQTw9GSjG?si=pG1VFW6MS0W5flrQvWdn3A"
+          >
             {" "}
             The Second After
           </a>
