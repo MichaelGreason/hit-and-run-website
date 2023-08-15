@@ -23,6 +23,7 @@ body {
     border-bottom-width: 1px;
     border-bottom-color: black;
     border-bottom-style: solid;
+    z-index: 100;
 }
 
 .site-background {
