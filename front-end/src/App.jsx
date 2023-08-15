@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Landing from "./pages/landing";
 import "./style/App.css";
+import "./style/custom.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Listen from "./pages/listen";

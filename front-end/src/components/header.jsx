@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="mb-4 p-4 flex justify-between">
+      <div className="mb-4 p-4 flex justify-between header">
         <div className=" cursor-pointer" onClick={goHome}>
           Hit and Run Studios
         </div>
