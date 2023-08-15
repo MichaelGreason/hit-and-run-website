@@ -1,14 +1,22 @@
 * {
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     font-size: larger;
     color: black;
     background-color: white;
+    height: 10vh;
 }
 
 .landing {
-    background-image: url("/src/assets/KN.png");
+    margin-top: 12vh;
+    height: 90vh;
+    background-image: url("/src/assets/hrbig2.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
