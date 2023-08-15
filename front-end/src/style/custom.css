@@ -1,3 +1,9 @@
+* {
+    font-family: 'Caprasimo', cursive;
+}
+
 .header {
-    color: red;
+    font-size: larger;
+    color: white;
+    background-image: url("/src/assets/shutterstock_1017761377-min.webp");
 }
