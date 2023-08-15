@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-regular-svg-icons";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -35,8 +36,10 @@ export default function Header() {
         </div>
         <div className=" self-center mr-4">
           <Dropdown>
-            <MenuButton>Explore</MenuButton>
-            <Menu className=" border-2 border-gray-900 p-2 header">
+            <MenuButton>
+              Explore <FontAwesomeIcon icon={faArrowDown} className="ml-1" />
+            </MenuButton>
+            <Menu className=" border-2 border-gray-900 p-2">
               <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
                 <FontAwesomeIcon icon={faHeadphones} className=" mr-1" /> Listen
               </MenuItem>
