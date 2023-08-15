@@ -39,5 +39,6 @@ body {
     padding: 10px;
     margin: auto;
     margin-top: 5vh;
-    font-size: x-large;
+    font-size: x-large; 
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
 }
