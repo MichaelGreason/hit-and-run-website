@@ -29,11 +29,14 @@ export default function Header() {
 
   return (
     <>
-      <div className="mb-4 p-6 flex justify-between header">
-        <div className=" cursor-pointer" onClick={goHome}>
-          Hit and Run Studios
+      <div className="mb-4 flex items-center header">
+        <div className="self-center ml-4 cursor-pointer" onClick={goHome}>
+          Hit and Run <div className=" text-center">Studios</div>
         </div>
-        <div className="">
+        <div className="w-20 m-auto text-center">
+          <img src="/src/assets/KN.png" />
+        </div>
+        <div className=" self-center mr-4">
           <Dropdown>
             <MenuButton>Explore</MenuButton>
             <Menu className=" border-2 border-gray-900 p-2 header">
