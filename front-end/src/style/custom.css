@@ -11,6 +11,9 @@
     color: black;
     background-color: white;
     height: 10vh;
+    border-bottom: 1px;
+    border-bottom: black;
+    border-bottom: solid;
 }
 
 .site-background {

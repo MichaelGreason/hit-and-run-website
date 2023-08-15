@@ -32,14 +32,14 @@ export default function Header() {
     <>
       <div className="mb-4 flex justify-between header">
         <div className="self-center ml-4 cursor-pointer" onClick={goHome}>
-          Hit and Run <div className=" text-center">Studios</div>
+          <img className="h-20" src="/src/assets/HRslimmed.png" />
         </div>
         <div className=" self-center mr-4">
           <Dropdown>
             <MenuButton>
               Explore <FontAwesomeIcon icon={faArrowDown} className="ml-1" />
             </MenuButton>
-            <Menu className=" border-2 border-gray-900 p-2">
+            <Menu className=" border-2 border-gray-900 p-2 bg-white">
               <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
                 <FontAwesomeIcon icon={faHeadphones} className=" mr-1" /> Listen
               </MenuItem>
