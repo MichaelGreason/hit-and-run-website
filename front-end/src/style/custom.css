@@ -2,24 +2,42 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-image: url("/src/assets/hrbig2.jpg");
+    background-size: 60vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;   
+    
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    font-size: larger;
+    font-size: x-large;
     color: black;
     background-color: white;
     height: 10vh;
-    border-bottom: 1px;
-    border-bottom: black;
-    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
 }
 
 .site-background {
     margin-top: 12vh;
     height: 90vh;
-    background-image: url("/src/assets/hrbig2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+}
+
+.cards {
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-color:grey;
+    border-style: solid;
+    width: 75vh;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5vh;
+    font-size: x-large;
 }
