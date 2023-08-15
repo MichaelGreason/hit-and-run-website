@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Listen from "./pages/listen";
 import Photos from "./pages/photos";
 import Reviews from "./pages/reviews";
+import Contacts from "./pages/contacts";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/listen" element={<Listen />} />
             <Route path="/photos" element={<Photos />} />
             <Route path="/reviews" element={<Reviews />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </div>
       </Router>

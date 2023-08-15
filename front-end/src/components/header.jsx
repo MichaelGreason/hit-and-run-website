@@ -4,10 +4,9 @@ import { MenuItem } from "@mui/base/MenuItem";
 import { Dropdown } from "@mui/base/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHeadphones } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-regular-svg-icons";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -26,6 +25,10 @@ export default function Header() {
 
   function goReviews() {
     navigate("/reviews");
+  }
+
+  function goContacts() {
+    navigate("/contacts");
   }
 
   return (
@@ -48,6 +51,11 @@ export default function Header() {
           <span onClick={goReviews}>
             <FontAwesomeIcon icon={faPencil} className="mr-1" />
             Reviews
+          </span>
+          <span> | </span>
+          <span onClick={goContacts}>
+            <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
+            Contacts
           </span>
         </div>
       </div>
