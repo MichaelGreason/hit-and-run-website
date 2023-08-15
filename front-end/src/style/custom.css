@@ -7,3 +7,8 @@
     color: black;
     background-color: white;
 }
+
+.landing {
+    background-image: url("/src/assets/KN.png");
+    background-size: cover;
+}
