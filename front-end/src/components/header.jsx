@@ -29,14 +29,14 @@ export default function Header() {
 
   return (
     <>
-      <div className="mb-4 p-4 flex justify-between bg-cyan-400">
+      <div className="mb-4 p-4 flex justify-between">
         <div className=" cursor-pointer" onClick={goHome}>
           Hit and Run Studios
         </div>
         <div className="">
           <Dropdown>
             <MenuButton>Explore</MenuButton>
-            <Menu className=" border-2 border-gray-900 p-2 bg-cyan-400">
+            <Menu className=" border-2 border-gray-900 p-2">
               <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
                 <FontAwesomeIcon icon={faHeadphones} className=" mr-1" /> Listen
               </MenuItem>
