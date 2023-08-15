@@ -1,3 +1,7 @@
 export default function Reviews() {
-  return <div className=" text-center">Reviews!</div>;
+  return (
+    <div className="site-background">
+      <div className=" text-center">Reviews!</div>
+    </div>
+  );
 }

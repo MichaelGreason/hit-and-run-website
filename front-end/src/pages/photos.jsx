@@ -1,3 +1,7 @@
 export default function Photos() {
-  return <div className=" text-center">Photos!</div>;
+  return (
+    <div className="site-background">
+      <div className=" text-center">Photos!</div>
+    </div>
+  );
 }

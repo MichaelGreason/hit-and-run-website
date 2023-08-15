@@ -34,26 +34,21 @@ export default function Header() {
         <div className="self-center ml-4 cursor-pointer" onClick={goHome}>
           <img className="h-20" src="/src/assets/HRslimmed.png" />
         </div>
-        <div className=" self-center mr-4">
-          <Dropdown>
-            <MenuButton>
-              Explore <FontAwesomeIcon icon={faArrowDown} className="ml-1" />
-            </MenuButton>
-            <Menu className=" border-2 border-gray-900 p-2 bg-white">
-              <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goListen}>
-                <FontAwesomeIcon icon={faHeadphones} className=" mr-1" /> Listen
-              </MenuItem>
-              <MenuItem className="mr-4 my-2 cursor-pointer" onClick={goPhotos}>
-                <FontAwesomeIcon icon={faImage} className="mr-1" /> Photos
-              </MenuItem>
-              <MenuItem
-                className="mr-4 my-2 cursor-pointer"
-                onClick={goReviews}
-              >
-                <FontAwesomeIcon icon={faPencil} className="mr-1" /> Reviews
-              </MenuItem>
-            </Menu>
-          </Dropdown>
+        <div className=" self-center mr-4 cursor-pointer">
+          <span onClick={goListen}>
+            {" "}
+            <FontAwesomeIcon icon={faHeadphones} className="mr-1" />
+            Listen
+          </span>
+          <span> | </span>
+          <span onClick={goPhotos}>
+            <FontAwesomeIcon icon={faImage} className="mr-1" /> Photos
+          </span>
+          <span> | </span>
+          <span onClick={goReviews}>
+            <FontAwesomeIcon icon={faPencil} className="mr-1" />
+            Reviews
+          </span>
         </div>
       </div>
     </>
