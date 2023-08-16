@@ -14,6 +14,7 @@ export default function Landing() {
           University in Winter Park, FL where I obtained my Audio Engineering
           degree. I have live music experience touring the US in my band
           <a
+            target="_blank"
             className=" text-blue-200"
             href="https://open.spotify.com/artist/48STVXwvno3eEgQTw9GSjG?si=pG1VFW6MS0W5flrQvWdn3A"
           >
