@@ -4,7 +4,7 @@ export default function Landing() {
   return (
     <>
       <div className="site-background">
-        <div className="text-center text-6xl font-extrabold">
+        <div className="text-center text-6xl font-extrabold titles">
           Welcome to the studio
         </div>
         <div className="cards font-extrabold">
@@ -14,7 +14,7 @@ export default function Landing() {
           University in Winter Park, FL where I obtained my Audio Engineering
           degree. I have live music experience touring the US in my band
           <a
-            className=" text-blue-700"
+            className=" text-blue-200"
             href="https://open.spotify.com/artist/48STVXwvno3eEgQTw9GSjG?si=pG1VFW6MS0W5flrQvWdn3A"
           >
             {" "}
@@ -25,7 +25,7 @@ export default function Landing() {
           LETSGO!
         </div>
         <div className="cards">
-          <img src="/src/assets/dsc04626.JPG" alt="MG photo" />
+          <img src="/src/assets/dsc04626.JPG" alt="MG photo" className="pb-8" />
         </div>
       </div>
     </>

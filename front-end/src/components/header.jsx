@@ -35,7 +35,7 @@ export default function Header() {
     <>
       <div className="mb-4 flex justify-between header">
         <div className="self-center ml-4 cursor-pointer" onClick={goHome}>
-          <img className="h-20" src="/src/assets/HRslimmed.png" />
+          <img className="h-20" src="/src/assets/invertedhr.jpg" />
         </div>
         <div className=" self-center mr-4 cursor-pointer">
           <span onClick={goListen}>
