@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Landing from "./pages/landing";
 import "./style/App.css";
 import "./style/custom.css";
@@ -10,6 +10,9 @@ import Reviews from "./pages/reviews";
 import Contacts from "./pages/contacts";
 
 function App() {
+  useEffect(() => {
+    document.title = "H&R Studios";
+  });
   return (
     <>
       <Router>
