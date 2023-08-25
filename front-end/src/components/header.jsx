@@ -47,16 +47,16 @@ export default function Header() {
           <span onClick={goPhotos}>
             <FontAwesomeIcon icon={faImage} className="mr-1" /> Photos
           </span>
-          <span> | </span>
+          {/* <span> | </span> */}
           {/* <span onClick={goReviews}>
             <FontAwesomeIcon icon={faPencil} className="mr-1" />
             Reviews
           </span> */}
-          <span> | </span>
+          {/* <span> | </span>
           <span onClick={goContacts}>
             <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
             Contacts
-          </span>
+          </span> */}
         </div>
       </div>
     </>
